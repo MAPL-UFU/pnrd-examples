@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/rogerhcp/.arduino15/packages/arduino/tools/**",
+                "/home/rogerhcp/.arduino15/packages/arduino/hardware/avr/1.6.23/**",
+                "/home/rogerhcp/arduino2/hardware/arduino/avr/**",
+                "/home/rogerhcp/arduino2/tools/**"
+            ],
+            "forcedInclude": [
+                "/home/rogerhcp/arduino2/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

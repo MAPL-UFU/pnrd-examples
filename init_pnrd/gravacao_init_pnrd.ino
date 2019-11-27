@@ -5,21 +5,23 @@
 #include <NfcAdapter.h>
 
 // programa/init_pnrd/gravacao_init_pnrd.ino
-
-int8_t mIncidenceMatrix[] = {-1,  0,  0,  0, 0,  0,  0,  0,
-                              1, -1,  0,  0, 0,  0,  0,  0,
-                              0,  1, -1,  0, 0,  0,  0,  0,
-                              0,  0,  1, -1, 0,  0,  0,  0,
-                              0,  0,  0,  1 ,0,  0,  0,  0};
+//Lembrar de Alocar os espaços das implementações futuras
+int8_t mIncidenceMatrix[] = {-1,  0,  0,  0, 0,  1,  1,
+                              1, -1, -1,  0, 0,  0,  0,
+                              0,  1,  0, -1,-1,  0,  0,
+                              0,  0,  1,  0, 0,  0,  0,
+                              0,  0,  0,  1, 0,  0,  0,
+                              0,  0,  0,  0,-1, -1,  0,
+                              0,  0,  0,  0 , 0,  1, -1};
       
-uint16_t mStartingTokenVector[] = {1,1,0,0,0,0};
+uint16_t mStartingTokenVector[] = {1,0,0,0,0,0,0};
 int incomingByte = 0;
     
 PN532_SPI pn532spi(SPI, 10);
 NfcAdapter nfc = NfcAdapter(pn532spi);
 
 Pn532NfcReader* reader = new Pn532NfcReader(&nfc);
-Pnrd pnrd = Pnrd(reader, 5, 8, true, true);
+Pnrd pnrd = Pnrd(reader, 7, 7, true, true);
 
 
 void setup() {  

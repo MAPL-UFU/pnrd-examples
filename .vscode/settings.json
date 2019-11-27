@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "type_traits": "cpp"
-    }
+    },
+    "arduino.path": "/home/rogerhcp/arduino2",
 }

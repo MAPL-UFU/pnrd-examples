@@ -14,7 +14,7 @@ enum class PetriNetInformation {
 	FIRE_VECTOR = 2,
 	CONDITIONS = 3,  
 	TAG_HISTORY = 4,
-	OTHER = 5
+	DESIRED_STATE = 5
 };
 
 enum class ReadError {

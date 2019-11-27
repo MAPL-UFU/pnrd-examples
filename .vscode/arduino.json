@@ -1,6 +1,6 @@
 {
-    "sketch": "esteira_1/esteira_1.ino",
+    "sketch": "MPT_readerUNO/readerUno.ino",
     "board": "arduino:avr:uno",
     "port": "/dev/ttyUSB0",
-    "programmer": "AVRISP mkII"
+    "programmer": "AVR ISP"
 }

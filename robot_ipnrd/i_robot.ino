@@ -66,7 +66,7 @@ void loop()
         {
           pnrd.getFireVector(fire_vector);
           if (memcmp((const void *)fire_vector, (const void *)ifTypeA, sizeof(fire_vector)) == 0)
-          {
+          {flagX1 = 1
             Serial.println(0b001); //Robo vai para (1,1,1)
             Serial.println("end");
           }
@@ -75,6 +75,7 @@ void loop()
             Serial.println(0b010); //Robo vai para (2,2,2)
             Serial.println("end");
           }
+ 
           else if (memcmp((const void *)fire_vector, (const void *)ifApproved, sizeof(fire_vector)) == 0)
           {
             Serial.println(0b101); //Robo vai para (4,4,4)
